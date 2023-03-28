@@ -214,7 +214,7 @@ function processInput(event) {
     const score = totalTime;
     const scoreEntry = getNewscoreEntry(initials, score);
     savescoreEntry(scoreEntry);
-    window.location.href= "/Code-Quiz/scores.html";
+    window.location.href= "./scores.html";
   }
 }
 
