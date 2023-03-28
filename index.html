@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assests/css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <title>Code Quiz</title>
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <nav>
+                
+                <a class="navbar-brand" href="/scores.html">View Scores</a> 
+                <section class="navbar-text"  id="timer">Time: <span id="time-remaining">90 </span> sec.</section>
+                             
+                
+            </nav>
+
+        </header>
+
+        <main>
+
+            <section id="start" class="quiz-section">
+              <h1>Code Quiz</h1>
+              <p class="card-text">Try your best! Any incorrect answers wil rest 10 seconds!</p>
+              <button id="start-button">Start</button>
+            </section>
+
+            <section id="quiz-questions" class="hidden quiz-section">
+              <h1 id="question">Questions</h1>
+              <ul id="choices"></ul>
+            </section>
+
+            <section id="end" class="quiz-section hidden">
+              <h1 id="end-title">Quiz completed</h1>
+              <p id="score-text">You scored: <span id="score">0</span></p>
+              <form id="submit-score">
+                <label for="initials">Enter initials:</label>
+                <input type="text" id="initials">
+                <button type="submit">Submit</button>
+                <p id="error-message"></p>
+              </form>
+              <a href="/index.html" class="back-button"><i class="fas fa-angle-left"aria-hidden="true"></i>Back to home</a>
+            </section>
+
+            <div>
+                <p id="correct" class="choice-status hidden" aria-hidden="true"></p>
+                <p id="wrong" class="choice-status hidden" aria-hidden="true"></p>
+            </div>
+
+          </main>
+
+          <script src="assests/script/index.js"></script>
+
+    </body>
+
+</html>
